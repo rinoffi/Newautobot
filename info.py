@@ -40,7 +40,7 @@ FILES_LIMIT = int(environ.get("FREE_FILES", "1")) #No. of File User Gets In Free
 # Database Settings
 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Darken:dark123@cluster0.n5tufrt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://Rinchan:9488128178siva@cluster0.txn0wcv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # For Files
+FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "mongodb+srv://nothingsunfav1322_db_user:uhV4xnCmjABxgvYz@cluster0.66dg6cw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # For Files
 SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "mongodb+srv://haribotx:haribotx@cluster0.i3skil4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # 2nd DB For Files
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'rinflies')
