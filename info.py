@@ -20,7 +20,7 @@ def is_valid_ip(ip):
 
 API_ID = int(environ.get('API_ID', '24160099'))
 API_HASH = environ.get('API_HASH', '381515f2540b0bf817a68af8b352f5b7')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8332103402:AAGF06t3v0Bx-_CLmJVluoe2jf2XBsNeMxo')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6248675084').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/Thizz_zoro")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002853893090'))
@@ -66,14 +66,14 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 # Force Subscribe Settings 
 
 auth_req_channels = environ.get("AUTH_REQ_CHANNELS", "-1002953889264")# requst to join Channel for force sub (make sure bot is admin) only for bot ADMINS  
-auth_channels = environ.get("AUTH_CHANNELS", "-1001869754827")# Channels for force sub (make sure bot is admin)
+auth_channels = environ.get("AUTH_CHANNELS", "-1002694700188")# Channels for force sub (make sure bot is admin)
 AUTH_REQ_CHANNELS = [int(ch) for ch in auth_req_channels.split() if ch and id_pattern.match(ch)] 
 AUTH_CHANNELS = [int(ch) for ch in auth_channels.split() if ch and id_pattern.match(ch)]
 
 # Channels
 
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1003122318314'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1001869754827')
+request_channel = environ.get('REQUEST_CHANNEL', '-1002694700188')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 
 # Movie Update Notification Settings/ Auto Index Settings
